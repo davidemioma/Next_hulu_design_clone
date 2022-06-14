@@ -16,10 +16,7 @@ const Thumbnails = ({
   const BASE_URL = "https://image.tmdb.org/t/p/original/";
 
   return (
-    <div
-      ref={ref}
-      className="group mb-3 cursor-pointer transition transform duration-200 ease-in sm:hover:scale-105 hover:z-50 "
-    >
+    <div className="group mb-3 cursor-pointer transition transform duration-200 ease-in sm:hover:scale-105 hover:z-50 ">
       <Image
         src={
           `${BASE_URL}${backdropPath || posterPath}` ||
