@@ -1,10 +1,9 @@
 import React from "react";
 import Thumbnails from "./Thumbnails";
-import FlipMove from "react-flip-move";
 
 const Movies = ({ results }) => {
   return (
-    <FlipMove className="my-10 px-5 sm:grid md:space-x-5 md:grid-cols-2 lg:grid-cols-3 3xl:flex flex-wrap justify-center ">
+    <div className="my-10 px-5 sm:grid md:space-x-5 md:grid-cols-2 lg:grid-cols-3 3xl:flex flex-wrap justify-center ">
       {results?.map((result) => (
         <Thumbnails
           key={result.id}
@@ -19,7 +18,7 @@ const Movies = ({ results }) => {
           voteCount={result.vote_count}
         />
       ))}
-    </FlipMove>
+    </div>
   );
 };
 
